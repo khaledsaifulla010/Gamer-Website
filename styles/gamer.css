@@ -38,7 +38,7 @@
     color: #FF42A5;
 }
 
-nav>ul {
+nav>.nav-list {
     display: flex;
     align-items: center;
 }
@@ -110,6 +110,12 @@ nav li a {
 
 /* Main section styles strat */
 /* online game styles start */
+
+.online-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .online-tittle {
     font-size: 25px;
     font-weight: 700;
@@ -128,10 +134,54 @@ nav li a {
     color: #534C64;
     font-size: 10px;
     font-weight: 400;
+    margin-top: 10px;
 }
-.online-image{
-    display: flex;
+
+.online-image img,
+.image-text {
+    width: 90%;
+    display: block;
+    margin: 15px;
 }
-.online-games{
-    text-align: center;
+.image-text {
+    color: #534C64;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.grid-container {
+    display: grid;
+    /* margin: 50px auto 0; */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.online-image:hover{
+    
+}
+
+/* Responsive Media Query */
+/* Mobile styles */
+@media screen and (max-width:425px) {
+
+    .nav-container,
+    .nav-list{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .banner{
+        flex-direction: column;
+        
+    }
+    .banner-img {
+        flex-direction: column;
+        width: 70%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 10px;
+    }
+    .image-text{
+        text-align: center;
+    }
 }
