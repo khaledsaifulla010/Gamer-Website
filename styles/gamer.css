@@ -25,6 +25,9 @@
 .img {
     width: 40px;
 }
+.nav-icon{
+    width: 35px;
+}
 
 .nav-logo h4 {
 
@@ -253,6 +256,7 @@ nav li a {
 
 .animation-section {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    margin-bottom: 90px;
 }
 
 /* Footer section styles start */
@@ -375,7 +379,63 @@ color: white;
         flex-direction: column;
         margin-top: 5px;
     }
-    .services{
+    .services,
+    .footer-terms{
+        flex-direction: column;
+    }
+}
+
+/* Tablet device */
+@media screen and (min-width:425px) and (max-width:768px) {
+    .nav-container,
+    .nav-list {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .banner {
+        flex-direction: column;
+
+    }
+
+    .banner-img {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+
+    }
+
+    .image-text {
+        text-align: center;
+    }
+
+    .play-image img {
+        width: 60%;
+        margin-top: 50px;
+        margin-left: 80px;
+
+    }
+
+    .play-sub-image {
+        width: 270px;
+        right: 70px;
+    }
+
+    .play-instantly {
+        flex-direction: column;
+    }
+
+    .animation-1,
+    .animation-2 {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .services,
+    .footer-terms{
         flex-direction: column;
     }
 }
