@@ -155,9 +155,29 @@ nav li a {
     /* margin: 50px auto 0; */
     grid-template-columns: repeat(4, 1fr);
 }
-
-.online-image:hover{
-    
+.text{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 48px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    visibility: hidden;
+}
+.online-image{
+    position: relative;
+    cursor: pointer;
+}
+.online-image:hover .text{
+    visibility: visible;
 }
 
 /* Responsive Media Query */
